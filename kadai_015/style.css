@@ -1,0 +1,36 @@
+/* html要素のフォントサイズは20px*/
+html {
+  font-size: 20px;
+}
+/* bodyのフォント種類を、「"Arial", "Meiryo", sans-serif」  */
+/* 全て中央寄せ*/
+body {
+  font-family: "Arial", "Meiryo", sans-serif;
+  text-align: center;
+}
+/* MYのM、「生年月日」「趣味」「プログラミングを始めた理由」の見出しをスカイブルーに指定 */
+.blue {
+  color: skyblue;
+}
+/* ProfileのP、「名前」「血液型」「好きな食べ物」の見出しをピンクに指定 */
+.pink {
+  color: rgb(255, 192, 203);
+}
+/* h1 フォントはGoogleフォント「Josefin Sans」、総称フォントは「sans-serif」  */
+/* h1 フォントサイズはルート要素の2倍 */
+/* h1 文字間は文字の大きさに対して1.2倍 */
+/* h1 影の大きさや色は自由 */
+/* h1 下に3px（カラー：rgb(115, 115, 114)）の実線 */
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1.2em;
+  text-shadow: 2px 2px 4px gray;
+  border-bottom: 3px solid rgb(115, 115, 114);
+/* 「名前」～「血液型」までの要素をid属性basicのdivタグで囲う */
+/* 次に子孫要素の考え方を利用して、「侍太郎」「1990年1月1日」「O型」を太字に */
+/* それ以外のp要素は太字にならないよう注意。 */
+}
+#basic p {
+  font-weight: bold;
+}
